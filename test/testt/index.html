@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Branding - Dhandapani</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: #007bff;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            transform: translateY(-20px);
+            animation: slideUp 1s ease-in-out forwards;
+        }
+
+        .content {
+            padding: 50px 20px;
+        }
+
+        .info {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Dhandapani | QA Automation Engineer</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+
+    <section id="about" class="content">
+        <h2>About Me</h2>
+        <div class="info">
+            <p>Dynamic and meticulous Software Engineer with 7+ years of experience in automation testing. Passionate
+                about solving automation challenges and improving testing frameworks. Experienced in API testing,
+                Selenium WebDriver, and CI/CD pipelines.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="content">
+        <h2>My Skills</h2>
+        <div class="info">
+            <ul>
+                <li>Selenium WebDriver</li>
+                <li>Core Java</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Rest Assured</li>
+                <li>Postman</li>
+                <li>Jenkins</li>
+                <li>API Testing</li>
+                <li>CI/CD</li>
+                <li>Test Automation Framework Development</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="content">
+        <h2>Projects</h2>
+        <div class="info">
+            <h3>QA Automation Engineer - Fiserv</h3>
+            <p>Developed hybrid automation frameworks for UI and API testing. Built retry analyzers and optimized test
+                execution pipelines.</p>
+        </div>
+        <div class="info">
+            <h3>QA Automation Engineer - TridentSQA</h3>
+            <p>Built and maintained automation regression suites, optimized API test coverage, and improved automation
+                efficiency.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact Me</h2>
+        <div class="info">
+            <p>Email: <a href="mailto:dhandapani1408@gmail.com">dhandapani1408@gmail.com</a></p>
+            <p>Phone: +91 9566107856</p>
+            <p>Location: Chennai, India</p>
+            <p><a href="https://www.linkedin.com/in/dhandapani-p-178642191/" target="_blank">LinkedIn</a> | <a
+                    href="https://github.com/Dhandapani1408" target="_blank">GitHub</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dhandapani. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

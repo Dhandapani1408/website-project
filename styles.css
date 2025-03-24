@@ -7,6 +7,7 @@ body {
     animation: fadeIn 0.8s ease-in forwards;
     font-family: 'Poppins', sans-serif;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    gap: 30px;
 }
 
 /* Navigation Bar */
@@ -120,10 +121,16 @@ button:active {
 
 /* Theme Toggle Switch */
 .theme-switch {
-    position: relative;
+    position: fixed;
     display: inline-block;
-    width: 50px;
-    height: 25px;
+    width: 25px;
+    height: 10px;
+    bottom: 10px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the left */
+    z-index: 1000;
+    /* Ensures it stays above other content */
 }
 
 .theme-switch input {
@@ -140,19 +147,19 @@ button:active {
     right: 0;
     bottom: 0;
     background-color: lightblue;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: 0.4s;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 18px;
-    width: 18px;
-    left: 4px;
-    bottom: 3.5px;
+    height: 8px;
+    width: 8px;
+    left: 2px;
+    bottom: 1.5px;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 10%;
     transition: 0.4s;
 }
 
@@ -161,7 +168,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-    transform: translateX(24px);
+    transform: translateX(12px);
 }
 
 /* Fade-in Animation */
@@ -173,4 +180,20 @@ input:checked+.slider:before {
     to {
         opacity: 1;
     }
+}
+
+#lastVisit {
+    position: fixed;
+    bottom: 0px;
+    /* Aligns with the toggle button */
+    left: 10px;
+
+    /* Distance from the right */
+    font-size: 14px;
+    color: gray;
+    background: rgba(255, 255, 255, 0.8);
+    /* Light background for better visibility */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.1);
 }

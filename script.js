@@ -89,4 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
         message.textContent = "";
         restoreClickMe.style.display = "none";
     });
+    localStorage.removeItem("userSettings");
+    userSettings = { ...userSettings, username: "", lastVisit: new Date().toLocaleString() };
+    greeting.textContent = "";
+    applySettings();
 });
